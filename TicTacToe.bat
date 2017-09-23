@@ -4,7 +4,7 @@
 ::Option variables
 SET color=0A
 COLOR %color%
-SET sound=ON
+::SET sound=ON
 SET title=TICTACTOE.BAT
 TITLE %title%
 ::Begin code
@@ -77,17 +77,17 @@ GOTO :title7
 CLS
 ECHO -OPTIONS-
 ECHO 	1: Color = %color%
-ECHO 	2: Sound = %sound%
-ECHO 	3: Title = %title%
-ECHO 	4: Back
+::ECHO  2: Sound = %sound%
+ECHO 	2: Title = %title%
+ECHO 	3: Back
 SET /P menu=	Enter your choice:
-IF %menu%==4 (
+IF %menu%==3 (
 	CLS
 	GOTO :title
 )
 IF %menu%==1 GOTO :color
-IF %menu%==2 GOTO :sound
-IF %menu%==3 GOTO :optTtl
+::IF %menu%==2 GOTO :sound
+IF %menu%==2 GOTO :optTtl
 GOTO :options
 ::End of options menu
 :color
